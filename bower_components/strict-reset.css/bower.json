@@ -1,0 +1,8 @@
+{
+  "name": "strict-reset.css",
+  "version": "0.5.2",
+  "main": "_strict-reset.scss",
+  "description": "Modern CSS reset",
+  "keywords": ["reset", "reset.css", "strict-reset.css"],
+  "license": "MIT"
+}

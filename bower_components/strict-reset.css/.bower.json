@@ -1,0 +1,23 @@
+{
+  "name": "strict-reset.css",
+  "version": "0.5.2",
+  "main": "_strict-reset.scss",
+  "description": "Modern CSS reset",
+  "keywords": [
+    "reset",
+    "reset.css",
+    "strict-reset.css"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/lukaszgrolik/strict-reset.css",
+  "_release": "0.5.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.5.2",
+    "commit": "c7bd7d0b562441fab4303d44a5c1ad62f95c2144"
+  },
+  "_source": "https://github.com/lukaszgrolik/strict-reset.css.git",
+  "_target": "^0.5.2",
+  "_originalSource": "strict-reset.css",
+  "_direct": true
+}

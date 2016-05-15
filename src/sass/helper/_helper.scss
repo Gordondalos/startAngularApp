@@ -1,0 +1,265 @@
+/* Приведенные ниже классы используются по всему коду.
+При размещении любого из компонентов, без фреймвока
+Superlative, только с использованием Бутстрапа, их нужно добавить
+в большинство Ксс стилей.
+*/
+
+/* Данный класс применяется только джаваскриптом
+для включения и отключения всплывающих элементов
+*/
+.displays {
+	display: block !important;
+}
+
+.cp:hover{
+	cursor: pointer;
+}
+
+/*Данный класс применяется для позиционировния
+элементов меню на всю ширину, задается для родительского элемента
+тега ul
+*/
+.tables_li {
+	width: 100%;
+	display: table;
+	ul {
+		display: table-row;
+		li {
+			display: table-cell !important;
+		}
+	}
+}
+
+// Просто белый цвет
+$white: #fff;
+
+/*Данный класс использует миксин бутстрапа для создания теней
+Изменение его значений изменит отображение теней в 90% кода
+*/
+.bk {
+	@include box-shadow(0 2px 6px $gray);
+}
+
+/*Так как в бустрапе по умолчанию нет белого цвета, использутеся
+данный класс чтобы залать элементам белый цвет
+*/
+.white {
+	color: #fff;
+}
+
+/*Данный клас использует миксин бутстрапа для создания закруглений рамок
+используется в 99% кода
+*/
+.br {
+	@include border-radius();
+}
+
+/*
+ * Убрать закругление (border-radius)
+ */
+.br-0 {
+	@include border-radius(0);
+}
+
+// Серые беграунды
+.bg-gray-dark {
+	background-color: $gray-dark;
+}
+
+.bg-gray {
+	background-color: $gray;
+}
+
+.bg-gray-light {
+	background-color: $gray-light;
+}
+
+.bg-gray-lighter {
+	background-color: $gray-lighter;
+}
+
+.bg-gray-lightest {
+	background-color: $gray-lightest;
+}
+
+//Серые тексты
+.text-gray-dark {
+	color: $gray-dark;
+}
+
+.text-gray {
+	color: $gray;
+}
+
+.text-gray-light {
+	color: $gray-light;
+}
+
+.text-gray-lighter {
+	color: $gray-lighter;
+}
+
+.text-gray-lightest {
+	color: $gray-lightest;
+}
+
+// бордер сверху
+.b-t {
+	border-top: 1px solid $gray-lighter;
+}
+
+// бордер сниху
+.b-b {
+	border-bottom: 1px solid $gray-lighter;
+}
+
+// бордер слева
+.b-l {
+	border-left: 1px solid $gray-lighter;
+}
+
+// бордер справа
+.b-r {
+	border-right: 1px solid $gray-lighter;
+}
+
+// Бордер со всех сторон
+.b-a {
+	border: 1px solid $gray-lighter;
+}
+
+// Отсутсвие рамки
+.b-none {
+	border: none !important;
+}
+
+.pos-relative {
+	position: relative;
+}
+
+// растягиваем картинку по родительскому элементу
+.img-max {
+	width: 100%;
+	height: auto;
+}
+
+// Делает элемент блочным
+.display-block {
+	display: block;
+}
+
+// Делает элемент inline-block
+.display-inline-block {
+	display: inline-block;
+}
+
+.bg-none {
+	background: none !important;
+}
+
+// Длает элемент инлайновым
+.display-inline {
+	display: inline;
+}
+
+// Убирает рамки
+.border-none {
+	border: none !important;
+}
+
+// Удаляет у ссылки декорации
+.hover-text-decoration-none {
+	&:focus,
+	&:active,
+	&.active,
+	&:hover {
+		text-decoration: none !important;
+	}
+	&:after,
+	&:before {
+		&:focus,
+		&:active,
+		&.active,
+		&:hover {
+			text-decoration: none !important;
+		}
+
+	}
+}
+
+// падинги по 0,5 rem
+.p-t-05 {
+	padding-top: 0.5rem;
+}
+
+.p-b-05 {
+	padding-bottom: 0.5rem;
+}
+
+.p-l-05 {
+	padding-left: 0.5rem;
+}
+
+.p-r-05 {
+	padding-right: 0.5rem;
+}
+
+.p-a-05 {
+	padding: 0.5rem;
+}
+
+.p-x-05 {
+	padding-left: .5rem;
+	padding-right: .5rem;
+}
+
+.p-y-05 {
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+}
+
+// маргины по 0,5 rem
+.m-t-05 {
+	margin-top: 0.5rem;
+}
+
+.m-b-05 {
+	margin-bottom: 0.5rem;
+}
+
+.m-l-05 {
+	margin-left: 0.5rem;
+}
+
+.m-r-05 {
+	margin-right: 0.5rem;
+}
+
+.m-a-05 {
+	margin: 0.5rem;
+}
+
+.m-x-05 {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.m-y-05 {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+// Делает беграунд полосатым
+.bg-striped {
+	@include gradient-striped();
+	background-size: $spacer-y $spacer-y;
+}
+
+a {
+	&:hover,
+	&:focus,
+	&:active,
+	&:link {
+		outline: none !important;
+	}
+}
